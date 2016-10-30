@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>旋转明星照</title>
+	<link rel="stylesheet" href="reset.css">
+	<style>
+	body{
+		background: #000;
+		perspective: 3000px;
+	}
+		.box{
+			width: 300px;
+			height: 200px;
+			background: pink;
+			position: relative;
+			margin: 60px auto;
+			
+			transform-style: preserve-3d;
+			-webkit-animation: sky 10s linear infinite;
+		}
+		@-webkit-keyframes sky{
+			0%{
+				-webkit-transform:rotateX(20deg) rotateY(0deg);
+			}
+			50%{
+				-webkit-transform:rotateX(-10deg) rotateY(180deg);
+			}
+			100%{
+				-webkit-transform:rotateX(20deg) rotateY(360deg);
+			}
+		}
+		.box li{
+			width: 100px;
+			height: 300px;                                                    
+			position: absolute;
+			top: 30%;
+			left: 50%;
+		}
+		.box li img{
+			width: 100px;
+			height: 300px;
+			border: 3px solid #fff;
+		}
+		.box li:nth-child(1){
+			transform: rotateY(30deg)  translateZ(500px);	
+		}
+		.box li:nth-child(2){
+			transform: rotateY(60deg) translateZ(500px);	
+		}
+		.box li:nth-child(3){
+			transform: rotateY(90deg) translateZ(500px);	
+		}
+		.box li:nth-child(4){
+			transform: rotateY(120deg) translateZ(500px);	
+		}
+		.box li:nth-child(5){
+			transform: rotateY(150deg) translateZ(500px);	
+		}
+		.box li:nth-child(6){
+			transform: rotateY(180deg) translateZ(500px);	
+		}
+		.box li:nth-child(7){
+			transform: rotateY(210deg) translateZ(500px);	
+		}
+		.box li:nth-child(8){
+			transform: rotateY(240deg) translateZ(500px);	
+		}
+		.box li:nth-child(9){
+			transform: rotateY(270deg) translateZ(500px);	
+		}
+		.box li:nth-child(10){
+			transform: rotateY(300deg) translateZ(500px);	
+		}
+		.box li:nth-child(11){
+			transform: rotateY(330deg) translateZ(500px);	
+		}
+		.box li:nth-child(12){
+			transform: rotateY(360deg) translateZ(500px);	
+		}
+		/* 
+		
+		
+		.box li:nth-child(5){
+			
+			top: 25%;
+			left: 25%;
+		}
+		.box li:nth-child(6){
+			
+			top: 30%;
+			left: 30%;
+		}
+		.box li:nth-child(7){
+			
+			top: 35%;
+			left: 25%;
+		}
+		.box li:nth-child(7){
+			
+			top: 35%;
+			left: 20%;
+		}
+		.box li:nth-child(7){
+			
+			top: 35%;
+			left: 15%;
+		}
+		.box li:nth-child(7){
+			
+			top: 35%;
+			left: 10%;
+		}
+		.box li:nth-child(7){
+			
+			top: 35%;
+			left: 5%;
+		}
+		.box li:nth-child(7){
+			
+			top: 35%;
+			left: 25%;
+		}
+		.box li:nth-child(7){
+			
+			top: 35%;
+			left: 25%;
+		}
+		.box li:nth-child(8){
+			
+			top: 35%;
+			left: 25%;
+		}
+		.box li:nth-child(9){
+			
+			top: 35%;
+			left: 25%;
+		}
+		.box li:nth-child(10){
+			
+			top: 35%;
+			left: 25%;
+		}
+		.box li:nth-child(11){
+			
+			top: 35%;
+			left: 25%;
+		}
+		.box li:nth-child(12){
+			
+			top: 35%;
+			left: 25%;
+		} */
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li><img src="images/gaoyuanyuan.jpg" alt=""></li>
+			<li><img src="images/chenhao.jpg" alt=""></li>
+			<li><img src="images/fanbingbing.jpg" alt=""></li>
+			<li><img src="images/liushishi.jpg" alt=""></li>
+			<li><img src="images/angelababy.jpg" alt=""></li>
+			<li><img src="images/liutao.jpg" alt=""></li>
+			<li><img src="images/liuyifei.jpg" alt=""></li>
+			<li><img src="images/tongliya.jpg" alt=""></li>
+			<li><img src="images/yangmi.jpg" alt=""></li>
+			<li><img src="images/yangzi.jpg" alt=""></li>
+			<li><img src="images/zhangxinyi.jpg" alt=""></li>
+			<li><img src="images/zhaoliying.jpg" alt=""></li>
+		</ul>
+	</div>
+</body>
+</html>
